@@ -1,7 +1,7 @@
 # Group 18
 Group Name: TEAM_NAME
 
-[MVP Link](https://docs.google.com/document/d/1xFI9DDdO5HZAcu36Y6NL-RTDry5E3WHkfy-ZEWuqbXM/edit?usp=sharing)
+[MVP Link](https://docs.google.com/document/d/1AUfbvvJSKkYDqcINQqDSRhWW6daa0tju/edit)
 
 Team Members: morgenw2, 
 
