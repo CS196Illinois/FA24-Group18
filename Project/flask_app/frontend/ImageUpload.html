@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style(IU).css"
+</head>
+<body style="background-color: orange;">
+    <!--I am still trying to improve this-->
+    <h1>Upload Your Image Here!</h1>
+    <hr>
+    
+    
+   
+    <div class="uImage">
+        <img src="questionmark.png" alt="material" title="your food" id="foodPic">
+        <label for="connectIU">Upload Image</label>
+        <input type="file" accept=".jpeg .jpg .png" id="connectIU">
+    </div>
+    
+<script>
+    let foodPicture = document.getElementById("foodPic");
+    let intputP = document.getElementById("connectIU");
+    intputP.onchange = function(){
+        foodPicture.src = URL.createObjectURL(intputP.files[0]);
+    }
+</script>
+    
+
+
+</body>
+</html>

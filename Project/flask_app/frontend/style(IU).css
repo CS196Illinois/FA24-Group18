@@ -1,0 +1,49 @@
+
+label{
+    top: 50%;
+    display: block;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    background-color: white;
+    color: #FF6060;
+    
+    border-radius: 60px;
+    border-style: outset;
+    border-width: 5px;
+    border-color:#FF6060;
+    
+    margin: 45px auto;
+    text-align: center;
+    
+    font-family: "Outfit", sans-serif ;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+
+    
+}
+input{
+    display: none;
+}
+h1{
+    text-align: center;
+    font-family: "Outfit", sans-serif ;
+    
+}
+
+#foodPic{
+    display: block;
+    width:800px;
+    height: 450px;
+    margin: 45px auto;
+    border-radius: 40px;
+    
+    position: relative;
+}
+hr{
+    border: 5px solid #FF6060;
+    border-style: outset;
+}
+
+
