@@ -43,7 +43,8 @@ h1{
     z-index: 70;
     position: relative;
     object-fit: contain;
-    background-color: black;
+    background-color: #404F37;
+    visibility:hidden;
 }
 #box1{
     display:block;
