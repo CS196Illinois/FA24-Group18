@@ -4,24 +4,51 @@
     <title></title>
     <link rel="stylesheet" href="style(IU).css"
 </head>
-<body style="background-color: orange;">
+<body style="background-color: #0D210D;">
     <!--I am still trying to improve this-->
-    <h1>Upload Your Image Here!</h1>
-    <hr>
     
+    <div id="box1">
+        <p id="bib">My Pantry</p>
+        <hr>
+        <p id="bib1">Upload Image</p>
+        <hr>
+        <p id="bib1">Review Ingredients</p>
+        <hr>
+        <p id="bib1">Browse Recommendations</p>
+        
+    </div>
     
-   
-    <div class="uImage">
-        <img src="questionmark.png" alt="material" title="your food" id="foodPic">
+    <div id="box2">
+        
+        <div class="uImage">
+            <img src="Imagede.png" alt="material" id="foodIcon">
+            <img src="" id="foodPic">
+        </div>
         <label for="connectIU">Upload Image</label>
         <input type="file" accept=".jpeg .jpg .png" id="connectIU">
+        <label for="takeP">Take A Picture</label>
+        <input type="file" accept="image/*" capture="user" id="takeP">
+        
     </div>
+  
+
+   
+    
     
 <script>
     let foodPicture = document.getElementById("foodPic");
     let intputP = document.getElementById("connectIU");
+
     intputP.onchange = function(){
         foodPicture.src = URL.createObjectURL(intputP.files[0]);
+    }
+</script>
+<script>
+    let fp2 = document.getElementById("foodPic");
+    let intputP = document.getElementById("takeP");
+
+    intputP.onchange = function(){
+        fp2.src = URL.createObjectURL(intputP.files[0]);
     }
 </script>
     

@@ -1,27 +1,29 @@
 
 label{
-    top: 50%;
-    display: block;
-    width: 400px;
-    height: 30px;
-    padding: 10px;
-    background-color: white;
-    color: #FF6060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 149px;
+    height: 40px;
+    background-color: #2B3626;
+    color: white;
+    z-index: 60;
+    position: relative;
     
-    border-radius: 60px;
-    border-style: outset;
-    border-width: 5px;
-    border-color:#FF6060;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #778271;
     
-    margin: 45px auto;
+    margin: auto;
     text-align: center;
+    bottom: 15%;
+    left: 5%;
     
-    font-family: "Outfit", sans-serif ;
-    font-size: 25px;
-    font-weight: 800;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    
     cursor: pointer;
-
-    
 }
 input{
     display: none;
@@ -34,16 +36,131 @@ h1{
 
 #foodPic{
     display: block;
-    width:800px;
-    height: 450px;
+    width: 523px;
+    height: 316px;
     margin: 45px auto;
-    border-radius: 40px;
-    
+    border-radius: 21px;
+    z-index: 70;
     position: relative;
+    object-fit: contain;
+    background-color: black;
+}
+#box1{
+    display:block;
+    background-color: #404F37;
+    width: 328px;
+    height: 249px;
+    top: 89px;
+    left: -59px;
+    border-radius: 21px;
+    z-index:30;
+    position: relative;
+    color:white;
+    padding-right: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 700;   
+    color: white;
+    text-align: right;
+
+}
+
+
+
+#bib{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 700;   
+    color: white;
+    text-align: right;
+    z-index:40;
+    position: relative;
+    top: 20px;
+    
+}
+#bib1{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    text-align:justify;
+    z-index: 40;
+    position: relative;
+    top: 20px;
+    left: 70px;
+    line-height: 2;
+    font-style: italic;
 }
 hr{
-    border: 5px solid #FF6060;
-    border-style: outset;
+    width: 345px;
+    border-color: #545D4E;
+    border-style: solid;
+    top:20px;
+    position:relative;
+
+}
+#box2{
+    display: block;
+    width: 1299px;
+    height: 559px;
+    border-radius: 21px;
+    background-color: #2b3626;
+    bottom: 220px;
+    left: 202px;
+    z-index: 20;
+    position: relative;
+
+}
+
+.uImage{
+    display: block;
+    width: 523px;
+    height: 316px;
+    border-radius: 21px;
+    background-color: #404F37;
+    position: relative;
+    z-index: 30;
+    top: 21%;
+    left: 5%;
+    margin: 60px auto;
+}
+
+#foodIcon{
+    display: block;
+    top: 7%;
+    left: 42.5%;
+    width: 80px;
+    height: 79px;
+
+    margin: 45px auto;
+    border-radius: 21px;
+    
+    position: absolute; 
+}
+label[for="takeP"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 149px;
+    height: 40px;
+    background-color: #2B3626;
+    color: white;
+    z-index: 70;
+    position: relative;
+    
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #778271;
+    
+    margin: auto;
+    text-align: center;
+    bottom: 10%;
+    left: 5%;
+    
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    
+    cursor: pointer;
 }
 
 
