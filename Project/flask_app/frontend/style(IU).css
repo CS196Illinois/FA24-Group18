@@ -17,7 +17,7 @@ label{
     margin: auto;
     text-align: center;
     bottom: 15%;
-    left: 5%;
+    left: 5.1%;
     
     font-family: "Roboto Mono", monospace;
     font-size: 16px;
@@ -34,14 +34,15 @@ h1{
     
 }
 
-#foodPic{
+.foodPics{
     display: block;
     width: 523px;
     height: 316px;
-    margin: 45px auto;
+    margin: auto;
     border-radius: 21px;
+    
     z-index: 70;
-    position: relative;
+    position: absolute;
     object-fit: contain;
     background-color: #404F37;
     visibility:hidden;
@@ -139,8 +140,6 @@ hr{
 }
 label[for="takeP"]{
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 149px;
     height: 40px;
     background-color: #2B3626;
@@ -155,7 +154,7 @@ label[for="takeP"]{
     margin: auto;
     text-align: center;
     bottom: 10%;
-    left: 5%;
+    left: 5.1%;
     
     font-family: "Roboto Mono", monospace;
     font-size: 16px;
@@ -163,5 +162,72 @@ label[for="takeP"]{
     
     cursor: pointer;
 }
+#logo{
+    width: 10%;
+    height: 10%;
+    display: block;
+    position: relative;
+    z-index: 90;
 
+}
+h1{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-size: 35px;
+    font-weight: 700;
+    top: 175px;
+    right: 45%;
+    display: block;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    z-index: 100;
+    position: relative;
+    left: 10%;
+    top: 85px;
+}
+.bcon{
+    display: flex;
+    
+}
+#Pic1{
+    display: flex;
+    border-style: none;
+    border-radius: 70%;
+    height: 15px;
+    width: 15px;
+    left: 48.85%;
+    z-index: 90;
+    position: relative;
+    background-color: #778271;
+    cursor: pointer;
+}
+#Pic2{
+    display: flex;
+    border-style: none;
+    border-radius: 70%;
+    height: 15px;
+    width: 15px;
+    left: 53.35%;
+    z-index: 90;
+    position: relative;
+    background-color: #778271;
+    cursor: pointer;
+}
+#Pic3{
+    display: flex;
+    border-style: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    left: 57.85%;
+    z-index: 90;
+    position: relative;
+    background-color: #778271;
+    cursor: pointer;
+}
 
