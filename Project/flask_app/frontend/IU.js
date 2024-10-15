@@ -12,6 +12,7 @@ let Pic3 = document.getElementById("Pic3");
 let count = 0;
 
 
+
 inputP.onchange = function(){
     switch(count) {
         case 0:
@@ -96,7 +97,7 @@ Pic1.onclick = function(){
         Pic2.style.backgroundColor = "#778271";
         Pic3.style.backgroundColor = "#778271";
         Pic1.style.backgroundColor = "#F5F5F5";
-        foodPic1.src = URL.createObjectURL(uploaded[0]);
+        foodPic1.src = uploaded[0];
         foodPic1.style.visibility = 'visible';
         foodPic2.style.visibility = 'hidden';
         foodPic3.style.visibility = 'hidden';
@@ -109,7 +110,7 @@ Pic2.onclick = function(){
         Pic1.style.backgroundColor = "#778271";
         Pic3.style.backgroundColor = "#778271";
         Pic2.style.backgroundColor = "#F5F5F5";
-        foodPic2.src = URL.createObjectURL(uploaded[1]);
+        foodPic2.src = uploaded[1];
         foodPic2.style.visibility = 'visible';
         foodPic1.style.visibility = 'hidden';
         foodPic3.style.visibility = 'hidden';
@@ -122,7 +123,7 @@ Pic3.onclick = function(){
         Pic1.style.backgroundColor = "#778271";
         Pic2.style.backgroundColor = "#778271";
         Pic3.style.backgroundColor = "#F5F5F5";
-        foodPic3.src = URL.createObjectURL(uploaded[2]);
+        foodPic3.src = uploaded[2];
         foodPic3.style.visibility = 'visible';
         foodPic2.style.visibility = 'hidden';
         foodPic1.style.visibility = 'hidden';

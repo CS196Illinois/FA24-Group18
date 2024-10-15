@@ -163,11 +163,13 @@ label[for="takeP"]{
     cursor: pointer;
 }
 #logo{
-    width: 10%;
-    height: 10%;
-    display: block;
+    width:50px;
+    height:50px;
+    display: flex;
     position: relative;
     z-index: 90;
+    right: 10px;
+    
 
 }
 h1{
@@ -183,11 +185,11 @@ h1{
     position: relative;
 }
 #logo{
-    width: 80px;
-    height: 80px;
+    width: 8%;
+    height: 8%;
     z-index: 100;
     position: relative;
-    left: 10%;
+    left: 3%;
     top: 85px;
 }
 .bcon{
