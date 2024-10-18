@@ -1,0 +1,116 @@
+#box1{
+    display:block;
+    background-color: #404F37;
+    width: 328px;
+    height: 249px;
+    top: 89px;
+    left: -59px;
+    border-radius: 21px;
+    z-index:30;
+    position: relative;
+    color:white;
+    padding-right: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 700;   
+    color: white;
+    text-align: right;
+}
+
+
+
+#bib{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 700;   
+    color: white;
+    text-align: right;
+    z-index:40;
+    position: relative;
+    top: 20px;
+    
+}
+#bib1{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    text-align:justify;
+    z-index: 40;
+    position: relative;
+    top: 20px;
+    left: 70px;
+    line-height: 2;
+    font-style: italic;
+}
+hr{
+    width: 345px;
+    border-color: #545D4E;
+    border-style: solid;
+    top:20px;
+    position:relative;
+
+}
+.scroll-bar{
+    display: block;
+    width: 1299px;
+    height: 559px;
+    border-radius: 21px;
+    background-color: #2b3626;
+    bottom: 160px;
+    left: 202px;
+    z-index: 20;
+    position: relative;
+    overflow: scroll;
+}
+#text1{
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    text-align: right;
+    font-weight: 500;
+    font-size: 24px;
+    padding-right: 70px;
+}
+#list{
+    list-style-type: none;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    text-align: right;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 550%;
+    padding-right: 100px;
+}
+.dishes{
+    margin-left: 20px;
+    width: 163px;
+    height: 100px;
+    background-color: #D9D9D9;
+    border-radius: 13px;
+    object-fit:cover;
+    vertical-align:text-top;
+    
+
+}
+#logo{
+    width:50px;
+    height:50px;
+    display: flex;
+    position: relative;
+    z-index: 90;
+    right: 10px;
+}
+#logo{
+    width: 8%;
+    height: 8%;
+    z-index: 100;
+    position: relative;
+    left: 3%;
+    top: 85px;
+}
+hr{
+    width: 345px;
+    border-color: #545D4E;
+    border-style: solid;
+    top:20px;
+    position:relative;
+}
