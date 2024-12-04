@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!--<h1>BYTE</h1>-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style(IU).css') }}">
+</head>
+<body style="background-color: #0D210D;">
+    <img class= "img1"; src="../static/images/logo_removebg.png"; alt="Bytes">
+    
+    <style>
+        .img1 {
+            width: 120px;
+            border-radius: 40px;
+            float: left;
+            position: absolute;
+            top: 15px; 
+            left: 50px; 
+            bottom: 50px; 
+        }
+    </style>
+
+    <div class="about"
+        style= "font-size: 23px;
+        position: absolute;
+        top: 50px; 
+        left: 1000px;
+        width: 550px; 
+        bottom: 50px; 
+        text-align: left; color: white;
+        font-size:25px ;
+        font-family: 'Roboto Mono', sans-serif;">
+        <a href="{{ url_for('home') }}" style="color: white; text-decoration: none;"> Home</a>
+    </div>
+    <div id="box1">
+        <p id="bib">My Pantry</p>
+        <hr>
+        <p id="bib1"><a href="{{ url_for('image_upload') }}" style="text-decoration: none; color: inherit;">Upload Image</a></p>
+        <hr>
+        <p id="bib1"><a href="{{ url_for('image_recognition') }}" style="text-decoration: none; color: inherit;">Review Ingredients</a></p>
+        <hr>
+        <p id="bib1"><a href="{{ url_for('RecipeSuggestion') }}" style="text-decoration: none; color: inherit;">Browse Recommendations</a></p>
+        
+    </div>
+    
+    <div id="box2">
+        
+        <div class="uImage">
+            <img src="../static/images/Imagede.png" alt="material" id="foodIcon">
+            <img src="" id="foodPic1" class="foodPics">
+            <img src="" id="foodPic2" class="foodPics">
+            <img src="" id="foodPic3" class="foodPics">
+        </div>
+        <form action="/upload" method = "POST" enctype="multipart/form-data">
+            <label for="connectIU">Upload Image</label>
+            <input type="file" name = "file" accept=".jpeg .jpg .png" id="connectIU">
+            <label for="takeP">Take Picture</label>
+            <input type="file" accept="image/*" capture="user" id="takeP" multiple>
+            <button type="submit" id = "sub">Continue</button>
+        </form>
+
+        <div class="bcon">
+            <button id="Pic1"></button>
+            <button id="Pic2"></button>
+            <button id="Pic3"></button>
+        </div>
+        
+    </div>
+  
+
+<script src="{{ url_for('static', filename='IU.js') }}"></script>
+
+
+    
+
+
+</body>
+</html>

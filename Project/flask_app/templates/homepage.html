@@ -4,8 +4,8 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'> 
 <title>Bytes!</title>
 </head>
-<img class= "img1"; src="../images/logo_removebg.png"; alt="Bytes">
-<img class= "im2"; src="../images/Take a photo of your pantry.png">
+<img class= "img1"; src="../static/images/logo_removebg.png"; alt="Bytes">
+<img class= "im2"; src="../static/images/Take a photo of your pantry.png">
 <style>
     .img1 {
         width: 120px;
@@ -89,7 +89,7 @@ font-family: 'Roboto Mono', sans-serif;">
         Welcome to our Home page!
     </div>
 </div>
-<a href="../image_upload/ImageUpload.html"; style= "
+<a href="{{ url_for('image_upload') }}"; style= "
 text-decoration: none; 
 position: absolute;
 top: 20px; 

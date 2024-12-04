@@ -1,4 +1,25 @@
 
+form {
+    display: inline;
+}
+#sub{
+    position: flex;
+    border: none;
+    position: relative;
+    width: 159px;
+    height: 50px;
+    background-color: #404F37;
+    color: white;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #778271;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    left: 80%;
+    text-align: center;
+    cursor: pointer;
+}
 label{
     display: flex;
     justify-content: center;

@@ -3,10 +3,10 @@
 <head>
     <title></title>
     <!--<h1>BYTE</h1>-->
-    <link rel="stylesheet" href="style(RS).css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style(RS).css') }}">
 </head>
 <body style="background-color: #0D210D;">
-    <img class= "img1"; src="./images/logo_removebg.png"; alt="Bytes">
+    <img class= "img1"; src="../static/images/logo_removebg.png"; alt="Bytes">
     
     <style>
         .img1 {
@@ -30,24 +30,24 @@
         text-align: left; color: white;
         font-size:25px ;
         font-family: 'Roboto Mono', sans-serif;">
-        <a href="./homepage/homepage.html" style="color: white; text-decoration: none;"> Home</a>
+        <a href="{{ url_for('home') }}" style="color: white; text-decoration: none;"> Home</a>
     </div>
 
     <div id="box1">
         <p id="bib">My Pantry</p>
         <hr>
-        <p id="bib1"><a href="./image_upload/ImageUpload.html" style="text-decoration: none; color: inherit;">Upload Image</a></p>
+        <p id="bib1"><a href="{{ url_for('image_upload') }}" style="text-decoration: none; color: inherit;">Upload Image</a></p>
         <hr>
-        <p id="bib1"><a href="url" style="text-decoration: none; color: inherit;">Review Ingredients</a></p>
+        <p id="bib1"><a href="{{ url_for('image_recognition') }}" style="text-decoration: none; color: inherit;">Review Ingredients</a></p>
         <hr>
-        <p id="bib1"><a href="./RecipeSuggestion.html" style="text-decoration: none; color: inherit;">Browse Recommendations</a></p>
+        <p id="bib1"><a href="{{ url_for('RecipeSuggestion') }}" style="text-decoration: none; color: inherit;">Browse Recommendations</a></p>
         
     </div>
     
     <div class="scroll-bar">
         <p id="text1">Recipe Recommendations</p>
         <ol id="list">
-            <li>Pasta Pomodoro<img src="./images/Dish1.jpg" alt="dish1" class="dishes" id="dish1"></li>
+            <li>Pasta Pomodoro<img src=".//images/Dish1.jpg" alt="dish1" class="dishes" id="dish1"></li>
             <li>Shakshuka<img src="./images/dish2.png" alt="dish2" class="dishes" id="dish1"></li>
             <li>Tomato Bruschetta<img src="./images/Dish3.png" alt="dish3" class="dishes" id="dish1"></li>
             <li>Vegetable Stir-fry<img src="./images/DIsh4.jpg" alt="dish4" class="dishes" id="dish1"></li>

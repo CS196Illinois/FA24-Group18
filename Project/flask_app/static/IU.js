@@ -130,3 +130,27 @@ Pic3.onclick = function(){
     }
 }
 
+
+
+
+
+// form.addEventListener("submit", function(e) {
+//     e.preventDefault();
+//     if (uploaded.length == 3) {
+//         console.log(...form)
+//         const formdata = new FormData();
+//         for (let i = 0; i < 3; i++) {
+//             formdata.append("picture" + i + 1, uploaded[i]);
+//         }
+//         fetch("http://127.0.0.1:5000/image_upload", {
+//             method: "POST",
+//             body: formdata,
+//         })
+        
+        
+
+//     }
+    
+    
+// })
+
