@@ -1,12 +1,12 @@
 # This is our main app file that will load all of our ML models and integrate the frontend and backend 
 # We will be using Flask/Django to integrate the frontend with the backend
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from RecipeALGO import RecipeRecommendation
 
 
 UPLOAD_FOLDER = 'uploads'
 app = Flask(__name__, static_folder='static')
-data = []
+
 
 @app.route("/")
 def home():
@@ -30,16 +30,19 @@ def image_recognition():
     if request.method  == "POST":
         data = request.get_json()
         closest_recipe = recipeRec.match_ingredients(data)
-        print(closest_recipe)
+        # print(closest_recipe)
+        return redirect(url_for('RecipeSuggestion', recipe=closest_recipe))
         
     else:
         return render_template("image_recognition.html")
 
 
 
-@app.route("/RecipeSuggestion")
+@app.route("/Recipe_Suggestion")
 def RecipeSuggestion():
-    return render_template("RecipeSuggestion.html")
+    recipe = request.args.get('recipe')
+    print(recipe)   
+    return render_template("RecipeSuggestion.html", data = recipe)
 
 
 
