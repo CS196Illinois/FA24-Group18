@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'> 
+    <title>Fridge Inventory</title>    
+
+    <style>
+        body {
+            font-family: 'Roboto Mono', sans-serif;
+            background-color: #0D210D;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        /* Logo */
+        .img1 {
+            width: 120px;
+            border-radius: 40px;
+            float: left;
+            position: absolute;
+            top: 15px; 
+            left: 50px; 
+            bottom: 50px; 
+        }
+
+        /* .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            padding-top: 50px;
+        } */
+
+        /* Left Menu */
+        /* .menu {
+            background-color: #404F37;
+            padding: 10px;
+            width: 250px;
+            height: 500px;
+            border-radius: 0px 32px 32px 0px;
+        }
+
+        .menu h1 {
+            padding-bottom: 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding-top: 0px;
+            padding-left: 120px;
+            
+        }
+
+        .menu button {
+            font-family: 'Roboto Mono', sans-serif;
+            background-color: #404F37;
+            color: white;
+            padding: 10px;
+            width: 90%;
+            margin-bottom: 15px;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .menu button:hover {
+            background-color: #687f66;
+
+        } */
+
+
+        #box1{
+            display:block;
+            background-color: #404F37;
+            width: 328px;
+            height: 249px;
+            top: 89px;
+            left: -59px;
+            border-radius: 21px;
+            z-index:30;
+            position: relative;
+            color:white;
+            padding-right: 20px;
+            font-family: "Roboto Mono", monospace;
+            font-size: 20px;
+            font-weight: 700;   
+            color: white;
+            text-align: right;
+        }
+
+
+
+        #bib {
+            font-family: "Roboto Mono", monospace;
+            font-size: 20px;
+            font-weight: 700;   
+            color: white;
+            text-align: right;
+            z-index:40;
+            position: relative;
+            top: 20px;
+            
+        }
+
+        #bib1 {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            text-align:justify;
+            z-index: 40;
+            position: relative;
+            top: 20px;
+            left: 70px;
+            line-height: 2;
+            font-style: italic;
+        }
+
+        hr {
+            width: 345px;
+            border-color: #545D4E;
+            border-style: solid;
+            top:20px;
+            position:relative;
+
+        }
+
+        /* Box 2 Images */
+        #box2 {
+            display: block;
+            width: 1299px;
+            height: 559px;
+            border-radius: 21px;
+            background-color: #2b3626;
+            bottom: 220px;
+            left: 202px;
+            z-index: 20;
+            position: relative;
+
+        }
+
+        .uImage {
+            display: block;
+            width: 523px;
+            height: 316px;
+            border-radius: 21px;
+            background-color: #404F37;
+            position: relative;
+            z-index: 30;
+            top: 21%;
+            right: 10%;
+            margin: 60px auto;
+        }
+
+        #foodIcon{
+            display: block;
+            top: 7%;
+            left: 42.5%;
+            width: 80px;
+            height: 79px;
+
+            margin: 45px auto;
+            border-radius: 21px;
+            
+            position: absolute; 
+        }
+
+        #logo{
+            width:50px;
+            height:50px;
+            display: flex;
+            position: relative;
+            z-index: 90;
+            right: 10px;
+            
+        }
+
+        h1{
+            color: white;
+            font-family: "Roboto Mono", monospace;
+            font-size: 35px;
+            font-weight: 700;
+            top: 175px;
+            right: 45%;
+            display: block;
+            text-align: center;
+            z-index: 100;
+            position: relative;
+        }
+        #logo{
+            width: 8%;
+            height: 8%;
+            z-index: 100;
+            position: relative;
+            left: 3%;
+            top: 85px;
+        }
+        .bcon{
+            display: flex;
+            
+        }
+        #Pic1{
+            display: flex;
+            border-style: none;
+            border-radius: 70%;
+            height: 15px;
+            width: 15px;
+            left: 35.85%;
+            z-index: 90;
+            position: relative;
+            background-color: #778271;
+            cursor: pointer;
+        }
+        #Pic2{
+            display: flex;
+            border-style: none;
+            border-radius: 70%;
+            height: 15px;
+            width: 15px;
+            left: 38.35%;
+            z-index: 90;
+            position: relative;
+            background-color: #778271;
+            cursor: pointer;
+        }
+        #Pic3{
+            display: flex;
+            border-style: none;
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            left: 40.85%;
+            z-index: 90;
+            position: relative;
+            background-color: #778271;
+            cursor: pointer;
+        }
+
+
+        /* Box 3: Ingredients*/
+        
+
+        .ingredients {
+   
+            background-color: #404F37;
+            width: 400px;
+            height: 559px;
+            border-radius: 32px 0px 0px 32px;
+            z-index: 100;
+            position: absolute;
+            top: 110px;
+            left: 1180px;
+        }
+        .ingredients p {
+            
+            font-family: "Roboto Mono", monospace;
+            font-size: 20px;
+            font-weight: 700;   
+            color: white;
+            text-align: right;
+            z-index:40;
+            position: relative;
+            top: 10px;
+            margin: 20px;
+        }
+
+        .ingredients ul {
+            
+            list-style-type: none;
+            overflow-y: scroll;
+        }
+
+        .ingredients li input {
+           
+            border: none;
+            background: none;
+            font-family: 'Roboto Mono', sans-serif;
+            font-style: italic;
+            color: white;
+            font-size: 13px;
+            flex-grow: 1;
+        }
+
+        .ingredients h2 {
+           
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients ul li {
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px;
+            margin-bottom: 10px;
+        }
+
+        .icon-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+
+        }
+        .icon-button img {
+            width: 20px;
+            height: 20px;
+            padding-left: 20px;
+        }
+
+        /* Continue button */
+        .continue-btn {
+            background-color: #4a5b4c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 275px;
+            cursor: pointer;
+            border-radius: 5px 5px 5px 5px;
+            width: 350px;
+        }
+        
+        .continue-btn a {
+            color: white;
+        }
+
+        .continue-btn:hover {
+            background-color: #687f66;
+        }
+        #submit{
+            position: flex;
+            border: none;
+            position: relative;
+            width: 159px;
+            height: 50px;
+            background-color: #2b3626;
+            color: white;
+            border-radius: 7px;
+            border-width: 1px;
+            border-color: #4a5b4c;
+            font-family: "Roboto Mono", monospace;
+            font-size: 16px;
+            font-weight: 500;
+            top: 70px;
+            left: 40%;
+            text-align: center;
+            cursor: pointer;
+        }
+        #form{
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Logo -->
+    <img class= "img1"; src="../static/images/logo_removebg.png"; alt="Bytes">
+
+    <!-- Left Menu -->
+    <div id="box1">
+        <p id="bib">My Pantry</p>
+        <hr>
+        <p id="bib1"><a href="{{ url_for('image_upload') }}" style="text-decoration: none; color: inherit;">Upload Image</a></p>
+        <hr>
+        <p id="bib1"><a href="{{ url_for('image_recognition') }}" style="text-decoration: none; color: inherit;">Review Ingredients</a></p>
+        <hr>
+        <p id="bib1"><a href="{{ url_for('RecipeSuggestion') }}" style="text-decoration: none; color: inherit;">Browse Recommendations</a></p>
+    </div>
+
+    <!-- Images -->
+    <div id="box2">
+        
+        <div class="uImage">
+            <img src="../static/images/Imagede.png" alt="material" id="foodIcon">
+            <img src="" id="foodPic1" class="foodPics">
+            <img src="" id="foodPic2" class="foodPics">
+            <img src="" id="foodPic3" class="foodPics">
+        </div>
+        <div class="bcon">
+            <button id="Pic1"></button>
+            <button id="Pic2"></button>
+            <button id="Pic3"></button>
+        </div>
+    </div>
+
+
+    <!--Box 3: Ingredients-->
+    <div class="ingredients">
+        <p >Ingredients</p>
+        <form id="form">
+            <input type="text" id="addIngredientInput" placeholder="Enter new ingredient" />
+            <button type="button" id="addIngredientButton">Add Ingredient</button>
+            <ul id="ingredientList"></ul>
+            <input type="hidden" id="hiddenInput" name="ingredients" />
+            <button type="submit" id="submit">Continue</button>
+        </form>
+        
+        <!--JS for list functionality-->
+        <script>
+
+            // Sample data (replace this with dynamic data if necessary)
+            const ingredients = ["tomato", "cucumber", "lettuce", "water", "onion", "eggs", "salt", "butter", "beef"];
+
+            // DOM elements
+            const ingredientList = document.getElementById("ingredientList");
+            const hiddenIngredients = document.getElementById("hiddenInput");
+            const form = document.getElementById("form");
+            const addInput = document.getElementById("addIngredientInput"); // New input field for adding ingredients
+            const addButton = document.getElementById("addIngredientButton"); // Button to trigger adding ingredients
+
+            // Function to render the ingredient list
+            function renderList() {
+                ingredientList.innerHTML = '';
+                ingredients.forEach((ingredient, index) => {
+                    const li = document.createElement("li");
+
+                    // Input field for the ingredient
+                    const input = document.createElement("input");
+                    input.type = "text";
+                    input.value = ingredient;
+                    input.disabled = true;
+
+                    // Edit button
+                    const editButton = document.createElement("button");
+                    editButton.className = "icon-button";
+                    const editImg = document.createElement("img");
+                    editImg.src = "../static/images/Edit 3.png";
+                    editButton.appendChild(editImg);
+                    editButton.onclick = function(e) {
+                        e.preventDefault();
+                        input.disabled = !input.disabled;
+                        if (input.disabled) {
+                            editImg.src = "../static/images/Edit 3.png";
+                            ingredients[index] = input.value;
+                        } else {
+                            editImg.src = "../static/images/Check.png";
+                        }
+                    };
+
+                    // Remove button
+                    const removeButton = document.createElement("button");
+                    removeButton.className = "icon-button";
+                    const removeImg = document.createElement("img");
+                    removeImg.src = "../static/images/X square.png";
+                    removeButton.appendChild(removeImg);
+                    removeButton.onclick = function(e) {
+                        e.preventDefault();
+                        ingredients.splice(index, 1);
+                        renderList();
+                    };
+
+                    li.appendChild(input);
+                    li.appendChild(editButton);
+                    li.appendChild(removeButton);
+                    ingredientList.appendChild(li);
+                });
+            }
+
+            // Function to add a new ingredient
+            function addIngredient(newIngredient) {
+                if (newIngredient.trim()) {
+                    ingredients.push(newIngredient.trim()); // Add to array
+                    renderList(); // Update the list
+                }
+            }
+
+            // Event listener for the Add Ingredient button
+            addButton.onclick = function() {
+                if (addInput.value.trim()) {
+                    addIngredient(addInput.value);
+                    addInput.value = ""; // Clear the input field after adding
+                }
+            };
+
+
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Serialize ingredients array as JSON
+            hiddenIngredients.value = JSON.stringify(ingredients);
+
+            // Send the data via a POST request
+            fetch("/process_ingredients", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json", // Indicate JSON content
+                },
+                body: hiddenIngredients.value, // Send the JSON string
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        // Let the response render the new page
+                        return response.text(); // Fetch the response body (HTML)
+                    } else {
+                        console.error("Failed to submit ingredients");
+                        throw new Error("Network response was not ok");
+                    }
+                })
+                .then((html) => {
+                    // Replace the current page with the new HTML
+                    document.documentElement.innerHTML = html;
+                })
+                .catch((err) => console.error("Error submitting ingredients:", err));
+        });
+
+            // Initial rendering of the list
+            renderList();
+
+            
+        </script>
+        <script>
+            
+        </script>
+    </div>
+        <div class="continue-btn"><a href ="{{ url_for('RecipeSuggestion') }}">Continue with Current Ingredients</a></div>
+        
+</div>
+
+</body>
+</html>

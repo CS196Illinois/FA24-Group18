@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Ingredients</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color: #0D210D; color: white; font-family: 'Roboto Mono', monospace; text-align: center;">
+
+    <!-- Image at the top -->
+    <div style="text-align: center; margin-top: 20px;">
+        <img src="https://imgix.ranker.com/list_img_v2/8252/2768252/original/funny-gordon-ramsay-memes" 
+             alt="Gordon Ramsay Meme" 
+             style="max-width: 70%; height: auto; border-radius: 10px;">
+    </div>
+
+    <h2>Recommended Recipes</h2>
+    <div>
+        {% for recipe_package in recipes %}
+            <p><strong>Recipe Package {{ loop.index }}:</strong></p>
+            <p>
+                {{ recipe_package.replace('Ingredients:', '<br>Ingredients:').replace('Directions:', '<br>Directions:') | safe }}
+            </p>
+            <hr>
+        {% endfor %}
+    </div>
+
+    <a href="{{ url_for('home') }}" style="color: lightblue; text-decoration: none;">Back to Home</a>
+</body>
+</html>
